@@ -108,8 +108,13 @@ ext {
     androidxJunitVersion = '1.1.5'
 }
 
+
 ## Architecture 
+
 IDE: Android Studio
+
 library: Room 
+
 Arthitecture: MVVM
+
 Programming Language: kotlin
