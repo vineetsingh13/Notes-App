@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919">
+
+    <LinearLayout
+        android:id="@+id/header_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#191919">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_alignParentStart="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#191919"/>
+
+            <ImageButton
+                android:id="@+id/add_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#191919"
+                android:src="@drawable/ic_baseline_check_24" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/add_title"
+        android:textColorHint="#66FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:hint="Add title"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_buttons"
+        android:outlineProvider="none"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="start|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_title"
+        android:hint="Add Description"
+        android:id="@+id/add_desc"
+        android:textColorHint="#66FFFFFF"
+        android:outlineProvider="none"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
